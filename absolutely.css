@@ -3,7 +3,6 @@
 	padding: 0;
 }
 
-
 body {
 	text-align : center;
 	font-family : Tahoma;
@@ -35,13 +34,12 @@ nav {
 	position: fixed;
 	top: 0;
 	width: 100%;
-
+	z-index: 100;
 }
 
 nav:hover{
 	background-image: url(bar2.png);
 	color: black;
-
 }
 
 nav:hover a{
@@ -54,7 +52,6 @@ nav:hover a{
 	text-align: center;
 }
 
-
 nav a{
 	text-decoration: none;
 	padding-left: 15px;
@@ -63,7 +60,6 @@ nav a{
 	color: gray;
 	text-align: center;
 }
-
 
 .container h1{
 	padding-top: 10px;
@@ -74,22 +70,44 @@ nav a{
 	top: -10%;
 }
 
+#title:hover {
+	position: absolute;
+	top: -9%;
+}
+
 #saw {
 	position: absolute;
 	top: 10%;
 	left: -10%;
 }
 
-#hammer{
+#saw:hover {
+	position: absolute;
+	top: 11%;
+	left: -10%;
+}
 
+#hammer{
 	position: absolute;
 	left: 70%;
 	top: -10%;
 }
 
+#hammer:hover {
+	position: absolute;
+	left: 70%;
+	top: -9%;
+}
+
 #pincers{
 	position: absolute;
 	top: 30%;
+	right: -10%;
+}
+
+#pincers:hover{
+	position: absolute;
+	top: 31%;
 	right: -10%;
 }
 
@@ -99,20 +117,28 @@ nav a{
 	top: 10%;
 }
 
+#screwdriver:hover{
+	position: absolute;
+	right: -10%;
+	top: 11%;
+}
+
+
 #toolbox{
 	position: absolute;
 	right: 35%;
 	top: 25%;
-	
+}
 
+#toolbox:hover{
+	position: absolute;
+	right: 35%;
+	top: 26%;
 }
 
 #toolbox:hover ul{
 	display: block;
 }
-
-
-
 
 #toolbox ul li a{
 	text-decoration: none;
@@ -129,19 +155,15 @@ nav a{
 	background-color: white;
 	width: 100px;
 	display: none;
-
 }
-
 
 #toolbox ul li{
 	border: solid black 2px;
 	list-style: none;
-
 }
 
 #toolbox ul li:hover{
 	background-color: #ffffe0;
-
 }
 
 #humanfactor{
@@ -150,8 +172,6 @@ nav a{
 
 #humanfactor:hover #humanfactortekst{
 	display: block;
-
-
 }
 
 #humanfactortekst {
@@ -167,5 +187,4 @@ nav a{
 	display: none;
 	position: absolute;
 	right: -10%;
-	
 }
